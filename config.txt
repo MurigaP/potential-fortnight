@@ -1,0 +1,13 @@
+
+
+docker network create --driver overlay --attachable local_network
+host.docker.internal
+
+su - postgres
+createuser --interactive --pwprompt
+
+psql -U admin@localhost.com
+
+
+LOGIN
+ALTER USER "admin@localhost.com" WITH LOGIN;

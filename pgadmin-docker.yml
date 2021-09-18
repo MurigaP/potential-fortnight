@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+    pgadmin:
+        container_name: pgadmin4_container
+        image: dpage/pgadmin4
+        restart: always
+        environment:
+          PGADMIN_DEFAULT_EMAIL: murigap@gmail.com
+          PGADMIN_DEFAULT_PASSWORD: localhost
+        ports:
+          - "5050:80"
+        volumes: 
+            - ./pgadmin4volume:/var/lib/pgadmin 
+        networks:
+          - local_network
+networks:
+  local_network:
+    name: local_database_network

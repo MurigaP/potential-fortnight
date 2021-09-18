@@ -1,0 +1,4 @@
+pgadmin4volume/*
+postgres-data/*
+.vscode
+.idea
