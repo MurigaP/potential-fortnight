@@ -5,7 +5,7 @@ services:
         image: dpage/pgadmin4
         restart: always
         environment:
-          PGADMIN_DEFAULT_EMAIL: murigap@gmail.com
+          PGADMIN_DEFAULT_EMAIL: admin@localhost.com
           PGADMIN_DEFAULT_PASSWORD: localhost
         ports:
           - "5050:80"

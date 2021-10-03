@@ -2,3 +2,4 @@ pgadmin4volume/*
 postgres-data/*
 .vscode
 .idea
+config.txt
